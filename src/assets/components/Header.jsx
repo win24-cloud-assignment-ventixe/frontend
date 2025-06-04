@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Header = () => {
   const location = useLocation()
@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <h4 className="header-title"><i className="fa-regular fa-arrow-left"></i>{getTitle()}</h4>
+      <Link className="header-title h4" to="/"><i className="fa-regular fa-arrow-left"></i>{getTitle()}</Link>
     </header>
   )
 }
