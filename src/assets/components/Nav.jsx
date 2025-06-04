@@ -1,5 +1,7 @@
 import React from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
+import Logo from "../images/ventixe-logo.svg";
+
 
 const Nav = () => {
 
@@ -10,7 +12,7 @@ const Nav = () => {
     <nav className="navbar">
         <div className="logotype">
             <NavLink to="/" className="logo">
-                <img src="/src/assets/images/ventixe-logo.svg" alt="Logo-icon" />
+                <img src={Logo} alt="Logo-icon" />
                 <span>Ventixe</span>
             </NavLink>
         </div>
