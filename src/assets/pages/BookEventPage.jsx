@@ -30,6 +30,7 @@ const BookEventPage = () => {
             if (!res.ok) {
                 console.error('Failed to book event')
             } else {
+                alert('Event booked successfully')
                 console.log('Event booked successfully')
                 navigate('/')
             }
